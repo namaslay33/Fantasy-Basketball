@@ -6,7 +6,7 @@ class Players extends Component {
   render() {
     return (
       <div className="App">
-        <br/><br/><br/><br/><br/><br/>
+        
         Players page... testing
         
       </div>

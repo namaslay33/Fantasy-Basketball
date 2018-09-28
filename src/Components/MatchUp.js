@@ -6,7 +6,6 @@ class MatchUp extends Component {
   render() {
     return (
       <div className="App">
-        <br/><br/><br/><br/><br/><br/>
         MatchUp page... testing
         
       </div>

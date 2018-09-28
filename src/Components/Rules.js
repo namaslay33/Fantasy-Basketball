@@ -6,9 +6,9 @@ class Rules extends Component {
   render() {
     return (
       <div>
-        
-        Rules page... testing
-        
+        <div>
+            <h1>Rules page... testing</h1>
+        </div>
       </div>
     );
   }

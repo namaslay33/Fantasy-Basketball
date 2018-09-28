@@ -37,13 +37,14 @@ class NavBar extends Component {
               </Navbar.Brand>
             </Navbar.Header>
           </Navbar>
+
         
         <Switch>
-          <Route exact path="/" Component={Home}/>
-          <Route exact path="./Rules" Component={Rules}/>
-          <Route exact path="./MyTeam" Component={MyTeam}/>
-          <Route exact path="./MatchUp" Component={MatchUp}/>
-          <Route exact path="./Players" Component={Players}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/Rules" component={Rules}/>
+          <Route exact path="/MyTeam" component={MyTeam}/>
+          <Route exact path="/MatchUp" component={MatchUp}/>
+          <Route exact path="/Players" component={Players}/>
         </Switch>
         </div>
         </ BrowserRouter>
