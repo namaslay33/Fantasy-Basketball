@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {Navbar} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
 
 import Home from './Home';
-import Rules from './Rules';
+import Rules from './LeagueRules';
 import MyTeam from './MyTeam';
 import MatchUp from './MatchUp';
 import Players from './Players';
@@ -14,8 +14,11 @@ class NavBar extends Component {
       return (
         <BrowserRouter>
         <div>
-          Test
+          <br/>
           <Navbar inverse collapseOnSelect fluid>
+            <Navbar.Brand>
+              <img width={80} height={100} src={require('../Image/NBA-fantasy.ico')}/>
+            </Navbar.Brand>
             <Navbar.Header>
               <Navbar.Brand>
                 <Link to="/">Home</Link>
@@ -33,7 +36,7 @@ class NavBar extends Component {
                 <Link to="/Players">Players</Link>
               </Navbar.Brand>
               <Navbar.Brand>
-                <img src=""alt="" />
+                <img width={60} height={90} src={require('../Image/Account.png')}/>
               </Navbar.Brand>
             </Navbar.Header>
           </Navbar>

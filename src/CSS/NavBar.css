@@ -1,0 +1,4 @@
+.Navbar brand {
+    display: flex;
+    justify-content: space-around;
+}
