@@ -20,8 +20,8 @@ class Players extends Component {
           <thead>
             <tr>
               <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
+              <th>Name</th>
+              <th>Position</th>
               <th>Points</th>
               <th>Rebounds</th>
               <th>Assists</th>

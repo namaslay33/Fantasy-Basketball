@@ -1,12 +1,15 @@
 import React, { Component} from 'react';
 // import {BrowserRouter} from 'react-router-dom';
 import '../CSS/home.css';
-import {Carousel, Grid, Row, Col, ButtonToolbar, Button} from "react-bootstrap";
+import {PageHeader, Carousel, Grid, Row, Col, ButtonToolbar, Button} from "react-bootstrap";
 
 class Home extends Component {
   render() {
     return (
       <div>
+        <PageHeader>
+          <strong>Reign Supreme</strong> <br /> <small>Where Fantasy Basketball Champions are Born</small>
+      </PageHeader>
       <Carousel className="carouselInfo">
         <Carousel.Item>
           <img width={1000} height={460} alt="900x500" src={require('../Image/Lakers.jpg')} />
@@ -37,29 +40,35 @@ class Home extends Component {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+          <Grid>
+          <Row className="show-grid">
+          <Col xs={2} md={2}></Col>
+          <Col xs={8} md={8}>
           <img width={900} height={500} alt="900x500" src={require('../Image/76ers.jpg')}/>
+          </Col>
+          <Col xs={2} md={2}></Col>
+          </Row>
+          </Grid>
           <Carousel.Caption>
           <h2>Philadelphia 76ers</h2>
           <p>Joel Embiid, "Trust the Process"</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-        
-       
-
-        {/* <Grid> */}
-          {/* <Row className="show-grid"> */}
-            {/* <Col xs={12} md={12}> */}
-              
-              {/* <code>Hello{'Is this text<Col xs={12} md={8} />'};</code> */}
-            {/* </Col> */}
-          {/* // </Row> */}
-        {/* </Grid> */}
+    
+    <Grid>
+      <Row className="show-grid">
+        <Col xs={4} md={4}></Col>
+        <Col xs={8} md={8}>
         <ButtonToolbar>
             <Button className="button" bsStyle="primary" bsSize="large" onClick>
                 Create Your Team
             </Button>
         </ButtonToolbar>
+        </Col>
+        <Col xs={4} md={4}></Col>
+      </Row>
+    </Grid>
 
       </div>
     );

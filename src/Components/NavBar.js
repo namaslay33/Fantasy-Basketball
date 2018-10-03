@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Nav, Navbar} from "react-bootstrap";
+import {Navbar} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
 
 import Home from './Home';
@@ -17,7 +17,7 @@ class NavBar extends Component {
           <br/>
           <Navbar inverse collapseOnSelect fluid>
             <Navbar.Brand>
-              <img width={80} height={100} src={require('../Image/NBA-fantasy.ico')}/>
+              <img width={80} height={100} src={require('../Image/NBA-fantasy.ico')} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Header>
               <Navbar.Brand>
@@ -36,7 +36,7 @@ class NavBar extends Component {
                 <Link to="/Players">Players</Link>
               </Navbar.Brand>
               <Navbar.Brand>
-                <img width={60} height={90} src={require('../Image/Account.png')}/>
+                <img width={60} height={90} src={require('../Image/Account.png')} alt="Account Icon" />
               </Navbar.Brand>
             </Navbar.Header>
           </Navbar>
