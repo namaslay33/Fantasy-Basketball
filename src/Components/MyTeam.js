@@ -50,8 +50,8 @@ class MyTeam extends Component {
                   <ListGroupItem>Point Guard</ListGroupItem>
                   <ListGroupItem>Shooting Guard</ListGroupItem>
                   <ListGroupItem>Guard / Forward</ListGroupItem>
-                  <ListGroupItem>Small/Power Forward</ListGroupItem>
-                  <ListGroupItem>Power Foward/Center</ListGroupItem>
+                  <ListGroupItem>Forward</ListGroupItem>
+                  <ListGroupItem>Foward/Center</ListGroupItem>
                 </ListGroup>
               </Panel>
           </Col>

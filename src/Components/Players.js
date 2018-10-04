@@ -5,6 +5,14 @@ import {Form, Table} from "react-bootstrap";
 
 class Players extends Component {
   render() {
+
+    // const search = $.getJSON('https://api.mysportsfeeds.com/v2.0/pull/nba/players.json', function (data) {
+    // console.log(data);
+    //   },
+
+    
+
+
     return (
       <div className="App">
         
@@ -15,12 +23,15 @@ class Players extends Component {
         </Form>
 
         <hr />
+
+        <h3>Season Average Stats</h3>
         
         <Table striped bordered condensed hover responsive>
           <thead>
             <tr>
               <th>#</th>
               <th>Name</th>
+              <th>Team</th>
               <th>Position</th>
               <th>Points</th>
               <th>Rebounds</th>

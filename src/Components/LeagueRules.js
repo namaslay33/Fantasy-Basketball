@@ -28,7 +28,7 @@ class LeagueRules extends Component {
                   </ul>
                 <li>Scores will be tallied on a weekly basis. Team with the most points by the end of the week wins</li>
                 <li>Champion is the team with the best record and highest season point total</li>
-                <li>Max Roster size will be 5 players</li>
+                <li>Max roster size will be 5 players</li>
               </ul>
               {/* </Col>
               </Row>

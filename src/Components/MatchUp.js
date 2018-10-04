@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import {BrowserRouter} from 'react-router-dom';
-import {Grid, Row, Col, ButtonToolbar, DropdownButton, MenuItem} from "react-bootstrap";
+import {Grid, Row, Col, ButtonToolbar, DropdownButton, MenuItem, Panel, ListGroup, ListGroupItem} from "react-bootstrap";
 import '../CSS/matchup.css'
 
 class MatchUp extends Component {
@@ -18,7 +18,8 @@ class MatchUp extends Component {
             <MenuItem eventKey="1">Week 1</MenuItem>
             <MenuItem eventKey="2">Week 2</MenuItem>
             <MenuItem eventKey="3">Week 3</MenuItem>
-            <MenuItem eventKey="4">Week 4</MenuItem>
+            {/* <MenuItem eventKey="4">Week 4</MenuItem>
+            <MenuItem eventKey="4">Week 5</MenuItem> */}
           </DropdownButton>
         </ButtonToolbar>
         </Col>
@@ -32,12 +33,34 @@ class MatchUp extends Component {
           <Row className="show-grid">
           <Col xs={12} md={5}>
             <h4><strong>Home Team</strong></h4>
-            <div className="Home">Home Team Roster</div>
+            Score:
+            <div className="Home">
+            <Panel>
+                <ListGroup>
+                  <ListGroupItem>Point Guard</ListGroupItem>
+                  <ListGroupItem>Shooting Guard</ListGroupItem>
+                  <ListGroupItem>Guard / Forward</ListGroupItem>
+                  <ListGroupItem>Forward</ListGroupItem>
+                  <ListGroupItem>Foward / Center</ListGroupItem>
+                </ListGroup>
+              </Panel>
+            </div>
           </Col>
           <Col md={2}>vs</Col>
           <Col md={5}>  
             <h4><strong>Away Team</strong></h4>
-            <div className="Away">Away Team Roster</div>
+            Score:
+            <div className="Away">
+            <Panel>
+                <ListGroup>
+                  <ListGroupItem>Point Guard</ListGroupItem>
+                  <ListGroupItem>Shooting Guard</ListGroupItem>
+                  <ListGroupItem>Guard / Forward</ListGroupItem>
+                  <ListGroupItem>Forward</ListGroupItem>
+                  <ListGroupItem>Foward / Center</ListGroupItem>
+                </ListGroup>
+              </Panel>
+            </div>
           </Col>
           </Row>
         </Grid>
