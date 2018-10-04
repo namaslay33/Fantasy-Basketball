@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+}
+
+.Home, .Away {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+    height: 500px;
+    width: 400px;
+    padding-top: 30px;
+}
