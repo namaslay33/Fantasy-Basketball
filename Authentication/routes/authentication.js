@@ -58,7 +58,7 @@ router.post('/signup', (req, res) => {
         //no users were found, create user in database
         if(results.length == 0){
 
-            db.user.create({email: "email", password: "password"})
+            db.user.create({email: email, password: password})
             .then((user) => {
                 return res.json({token: tokenForUser(user)})
             })
