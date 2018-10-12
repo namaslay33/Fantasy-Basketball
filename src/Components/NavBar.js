@@ -36,6 +36,9 @@ class NavBar extends Component {
                 <Link to="/Players">Players</Link>
               </Navbar.Brand>
               <Navbar.Brand>
+                <Link to="">Standings</Link>
+              </Navbar.Brand>
+              <Navbar.Brand>
                 <img width={60} height={90} src={require('../Image/Account.png')} alt="Account Icon" />
               </Navbar.Brand>
             </Navbar.Header>

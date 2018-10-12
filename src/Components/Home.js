@@ -83,19 +83,24 @@ class Home extends Component {
       </Carousel.Item>
     </Carousel>
     
-    {/* <Grid>
+    <Grid>
       <Row className="show-grid">
-        <Col xs={4} md={4}></Col>
-        <Col xs={8} md={8}>
-        <ButtonToolbar>
+       
+        <Col xs={3} md={3} offset={3}>
+        {/* <ButtonToolbar> */}
             <Button className="button" bsStyle="primary" bsSize="large" onClick>
-                Create Your Team
+                Sign Up
             </Button>
-        </ButtonToolbar>
+        {/* </ButtonToolbar> */}
         </Col>
-        <Col xs={4} md={4}></Col>
+        <Col xs={3} md={3}>
+          <Button className="button" bsStyle="primary" bsSize="large" onClick>
+                Sign In
+          </Button>
+
+        </Col>
       </Row>
-    </Grid> */}
+    </Grid>
 
       </div>
     );

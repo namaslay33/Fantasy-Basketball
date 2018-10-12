@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import {BrowserRouter} from 'react-router-dom';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 import '../CSS/home.css';
 import '../CSS/rules.css'
 
@@ -9,6 +9,7 @@ class LeagueRules extends Component {
     return (
       <div>
         <div className="Background">
+        <Jumbotron>
             <h1>League Rules</h1>
 
             <br/><br />
@@ -17,7 +18,7 @@ class LeagueRules extends Component {
               <Col md={2}></Col>
               <Col md={4}> */}
                 <ul>
-                <li>There are 5 categories for scoring: </li>
+                <li>There are 6 categories for scoring: </li>
                   <ul>
                     <li>Points = 1</li>
                     <li>Rebounds = 1.2</li>
@@ -33,6 +34,7 @@ class LeagueRules extends Component {
               {/* </Col>
               </Row>
             </Grid> */}
+        </Jumbotron>
         </div>
       </div>
     );

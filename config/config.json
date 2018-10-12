@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "FantasyBasketball",
+    "host": "127.0.0.1",
+    "dialect": "mpostgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": null,
+    "database": "FantasyBasketball",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": null,
+    "database": "FantasyBasketball",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
