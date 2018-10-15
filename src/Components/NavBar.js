@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar} from "react-bootstrap";
+import {Navbar, NavDropdown, MenuItem} from "react-bootstrap";
 import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
 
 import Home from './Home';
@@ -38,8 +38,18 @@ class NavBar extends Component {
               <Navbar.Brand>
                 <Link to="">Standings</Link>
               </Navbar.Brand>
-              <Navbar.Brand>
+              {/* <Navbar.Brand>
                 <img width={60} height={90} src={require('../Image/Account.png')} alt="Account Icon" />
+              </Navbar.Brand> */}
+              <Navbar.Brand>
+              <NavDropdown  title="Account" id="basic-nav-dropdown">
+                <MenuItem eventKey={3.1}>
+                  <Link to="" className="Link" style={{color: "black"}}>Sign Up </Link>
+                    / 
+                  <Link to="" style={{color: "black"}}> Sign In</Link>
+                </MenuItem>
+                <MenuItem eventKey={3.1} style={{color: "black"}}>Sign Out</MenuItem>
+              </NavDropdown>
               </Navbar.Brand>
             </Navbar.Header>
           </Navbar>

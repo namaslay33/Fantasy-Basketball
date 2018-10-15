@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 // import {BrowserRouter} from 'react-router-dom';
 import '../CSS/home.css';
-import {PageHeader, Carousel, Grid, Row, Col, ButtonToolbar, Button} from "react-bootstrap";
+import {PageHeader, Carousel, Grid, Row, Col, ButtonToolbar, ButtonGroup, Button} from "react-bootstrap";
 
 class Home extends Component {
   render() {
@@ -10,21 +10,44 @@ class Home extends Component {
 
       {/* Title */}
         <PageHeader>
-          <strong>Reign Supreme</strong> <br /> <small>Where Fantasy Basketball Champions are Born</small>
+          <h2><strong>Reign Supreme</strong></h2> <small>Where Fantasy Basketball Champions are Born</small><br /><br />
+
+          <div style={{fontSize: "16px"}}> Are You Ready to play?</div>
+        <Grid>
+        <Row className="show-grid">
+        <Col xs={4} md={5}></Col>
+        <Col xs={2} md={3}>
+          <ButtonToolbar>
+            <ButtonGroup>
+            <Button className="button" bsStyle="primary" bsSize="small" onClick>
+                Sign Up
+            </Button>
+            </ButtonGroup>
+            <ButtonGroup>
+            <Button className="button" bsStyle="primary" bsSize="small" onClick>
+                Sign In
+            </Button>
+            </ButtonGroup>
+          </ButtonToolbar>
+        </Col>
+        </Row>
+        </Grid>
       </PageHeader>
       {/* Title End */}
+
+
       <Carousel className="carouselInfo">
         <Carousel.Item>
           <Grid>
           <Row className="show-grid">
           <Col xs={8} md={8}>
-          <img width={1000} height={460} alt="900x500" src={require('../Image/Lakers.jpg')} />
+          <img width={1050} height={520} alt="900x500" src={require('../Image/Lakers.jpg')} />
           </Col>
           </Row>
           </Grid>
           <Carousel.Caption>
-          <h2>Los Angeles Lakers</h2>
-          <p>A new Lake Show is in town led by King James</p>
+          <h1>Los Angeles Lakers</h1>
+          <p style={{fontSize: "16px"}}>A new Lake Show is in town led by King James</p>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -32,39 +55,39 @@ class Home extends Component {
           <Grid>
           <Row className="show-grid">
           <Col xs={8} md={8} offset={2}>
-          <img width={900} height={500} alt="900x500" src={require('../Image/Celtics.jpg')} />
+          <img width={1050} height={520} alt="900x500" src={require('../Image/Celtics.jpg')} />
           </Col>
           </Row>
           </Grid>
           <Carousel.Caption>
-          <h2>Boston Celtics</h2>
-          <p>With a healthy squad, Kyrie Irving and Gordon Hayward look to win it all</p>
+          <h1>Boston Celtics</h1>
+          <p style={{fontSize: "16px"}}>With a healthy squad, Kyrie Irving and Gordon Hayward look to win it all</p>
         </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <Grid>
           <Row className="show-grid">
           <Col xs={8} md={8} offset={2}>
-          <img width={900} height={500} alt="900x500" src={require('../Image/Warriors.jpg')} />
+          <img width={1050} height={520} alt="900x500" src={require('../Image/Warriors.jpg')} />
           </Col>
           </Row>
           </Grid>
           <Carousel.Caption>
-          <h2>Golden State Warriors</h2>
-          <p>Same team, same goals. Three-peat anyone?</p>
+          <h1>Golden State Warriors</h1>
+          <p style={{fontSize: "16px"}}>Same team, same goals. Three-peat anyone?</p>
         </Carousel.Caption>
       </Carousel.Item>
         <Carousel.Item>
           <Grid>
           <Row className="show-grid">
           <Col xs={8} md={8} offset={2}>
-          <img width={900} height={500} alt="900x500" src={require('../Image/Rockets.jpg')} />
+          <img width={1050} height={520} alt="900x500" src={require('../Image/Rockets.jpg')} />
           </Col>
           </Row>
           </Grid>
           <Carousel.Caption>
-          <h2>Houston Rockets</h2>
-          <p>The addition of Carmelo can propel the rockets to new heights</p>
+          <h1>Houston Rockets</h1>
+          <p style={{fontSize: "16px"}}>The addition of Carmelo can propel the rockets to new heights</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -72,37 +95,43 @@ class Home extends Component {
           <Row className="show-grid">
           
           <Col xs={8} md={8} offset={2}>
-          <img width={900} height={500} alt="900x500" src={require('../Image/76ers.jpg')}/>
+          <img width={1050} height={520} alt="900x500" src={require('../Image/76ers.jpg')}/>
           </Col>
           </Row>
           </Grid>
           <Carousel.Caption>
-          <h2>Philadelphia 76ers</h2>
-          <p>Joel Embiid, "Trust the Process"</p>
+          <h1>Philadelphia 76ers</h1>
+          <p style={{fontSize: "16px"}}>Joel Embiid, "Trust the Process"</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Grid>
+        <Row className="show-grid">
+        <Col xs={8} md={8} offset={2}>
+        <img width={1000} height={520} alt="900x500" src={require('../Image/Bucks.jpg')}/>
+          </Col>
+          </Row>
+          </Grid>
+          <Carousel.Caption>
+          <h1>Milwaukee Bucks</h1>
+          <p style={{fontSize: "16px"}}>Giannis looks ready to be the next MVP</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+          <Grid>
+          <Row className="show-grid">
+          <Col xs={8} md={8} offset={2}>
+          <img width={1100} height={520} alt="900x500" src={require('../Image/Thunder.jpg')} />
+          </Col>
+          </Row>
+          </Grid>
+          <Carousel.Caption>
+          <h1>Oklahoma City Thunder</h1>
+          <p style={{fontSize: "16px"}}>Paul George is in it for the long haul</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    
-    <Grid>
-      <Row className="show-grid">
-       
-        <Col xs={3} md={3} offset={3}>
-        {/* <ButtonToolbar> */}
-            <Button className="button" bsStyle="primary" bsSize="large" onClick>
-                Sign Up
-            </Button>
-        {/* </ButtonToolbar> */}
-        </Col>
-        <Col xs={3} md={3}>
-          <Button className="button" bsStyle="primary" bsSize="large" onClick>
-                Sign In
-          </Button>
-
-        </Col>
-      </Row>
-    </Grid>
-
-      </div>
+  </div>
     );
   }
 }
